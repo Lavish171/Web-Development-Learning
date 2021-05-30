@@ -1,0 +1,117 @@
+/*in css we basically do add the comments by adding  */
+/*Selector
+{
+    Property:Value;
+}*/
+
+/* *(star) is used to apply that property over all the page,here it is aligning text to right
+but since as we go down it is aligning the text of h2 and p to center*/
+*{
+   text-align: right;
+}
+
+/*for the body,if we want the image as the background image,then we can use body*/
+body{
+    /*when we want to add the background image,then we will use this*/
+
+    background-image: url('background_image_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* This p after comma is basically the selector,applying same style as of for h2*/
+
+/*h2+p denotes that apply the design to those with like select any p element which is exactly just 
+after the h2 element*/
+
+/* h2 p denotes that apply the design to p that are inside the heading h2*/
+
+/* h2,p denotes that apply the design to both h2 and p*/
+
+/*h2+p:hover is used to hover over the text,if do apply below this,then when we hover over p,it will
+be showed in the center and with the borders over it,no effect over h2,since h2+p means do styling over
+p which is just after the h2*/
+
+p{
+    color:#758AA8;
+    text-align: center;
+    /*border:4px solid purple;*/
+    /*you can also give border like 
+    border:4px solid rgb(194, 99, 126)*/
+
+    /*last parameter ie is passed is called as alpha,if it is 1,it will be fully visible and if it is 0,then it will
+    visible*/
+    border:4px solid rgba(194, 99, 126, 0.7);
+    cursor: pointer;
+}
+
+p{
+    color: pink;
+
+    /* if we write color:pink !important,then it will apply pink to all over the p,if we have not used,green would
+     have been applied,though it is not recommended to be used */
+}
+
+/*since css is cascading,so last most style would be applied,ie color would be set to green*/
+
+p{
+    text-decoration: underline;
+    /*text-decoration: line-through;*/
+   /* text-transform:capitalize;
+    text-transform:uppercase;*/
+
+    line-height: 50px;
+    font-style: italic;
+    /*font weight is from 100 to 900,900 is the most bolded*/
+
+    font-weight: 600;
+    font-size: 130%;
+
+    /*This means that if that computer do not have times new roman,then print times,aur use font as sarif*/
+
+
+    font-family: 'Pattaya', sans-serif;
+    color:green
+}
+
+/*by doing this all the dots will be gone.*/
+li{
+    list-style: none;
+    /*used to display the list elements in one line*/
+    display: inline-block;
+    margin: 0.2cm;
+}
+
+/*This is basically used to use the image with the floating text,mtlb text bhi aa jaaye image ke 
+saath saath*/
+img
+{
+    float:right;
+}
+/*last-child is used to design the last element of that class*/
+
+.webtext:first-child
+{
+    border:5px dashed green
+}
+.active
+{
+    color:red;
+}
+
+/*for id we need to use the # symbol*/
+
+#div1
+{
+    /*background: blue;*/
+    /*strong blue in rgb is 255 and is same for other two colors red and green,
+    we can also add the opacity,by using rgba*/
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#div2
+{
+    background: rgba(0, 255, 0, 0.2);
+}

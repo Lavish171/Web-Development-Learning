@@ -1,0 +1,29 @@
+h2
+{
+    color: blue;
+}
+p{
+    color:black;
+    font-size:15px;
+}
+.boxmodel
+{
+    border:5px solid red;
+    display: inline-block;
+    /*This is padding over at top,right,bottom and left*/
+    padding:5px 20px 5px 20px;
+    margin: 15px;
+    width: 30px;
+    height: 40px;
+    /*above will give 15px margin outside the box in all the diractions,but if we want to give the 
+    margin in one explicit direction,then also we can give it.*/
+}
+
+/*em is basically used to have the font size 3times then the containing element*/
+span
+{
+    /*em is always have font size relative to the font size of the containing element*/
+
+    /*rem is used to set the font size as compared to the size of the root element,like here page font size*/
+    font-size:2rem ;
+}
